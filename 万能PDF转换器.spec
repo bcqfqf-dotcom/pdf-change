@@ -15,7 +15,7 @@ datas += tmp_ret_pymupdf[0]; binaries += tmp_ret_pymupdf[1]; hiddenimports += tm
 
 
 a = Analysis(
-    ['E:\\ai project\\universal-pdf-converter\\converter_app.py'],
+    ['converter_app.py'],
     pathex=[],
     binaries=binaries,
     datas=datas,
