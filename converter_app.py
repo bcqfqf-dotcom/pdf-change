@@ -83,7 +83,7 @@ ctk.set_default_color_theme("blue")
 class PDFConverterApp(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("万能 PDF 转换器 v1.8.2")
+        self.title("万能 PDF 转换器")
         self.geometry("800x700")
         self.input_paths = set()
         self.output_dir = ""
@@ -113,7 +113,7 @@ class PDFConverterApp(ctk.CTk):
         self._btn_out = ctk.CTkButton(bf, text="保存位置", command=self._pick_o, fg_color="gray")
         self._btn_out.grid(row=0, column=2, padx=10, pady=20)
 
-        self._lbl = ctk.CTkLabel(self, text="当前待处理：0 个路径", text_color="#3498db")
+        self._lbl = ctk.CTkLabel(self, text="当前待处理：0 个路径  |  支持拖拽文件到窗口", text_color="#3498db")
         self._lbl.grid(row=2, pady=5)
 
         cf = ctk.CTkFrame(self); cf.grid(row=3, padx=20, pady=5, sticky="ew")
