@@ -30,6 +30,6 @@ jobs:
       if: github.event_name == 'release'
       uses: softprops/action-gh-release@v1
       with:
-        files: dist/万能PDF转换器.exe
+        files: dist/PDFConverter.exe
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -35,7 +35,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='万能PDF转换器',
+    name='PDFConverter',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
